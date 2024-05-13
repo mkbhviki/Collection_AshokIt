@@ -30,7 +30,7 @@ public class ArrayListMethod {
 		 
 		// System.out.println(l.lastIndexOf(400));
 		 
-		// System.out.println(l.indexOf(444));
+		 System.out.println(l.indexOf(444));
 		// l.clear();
 		 //System.out.println(l);
 		 
