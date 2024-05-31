@@ -17,6 +17,8 @@ public class StudentMapDemo {
 		map.put(1, s1);
 		map.put(2, s2);
 		map.put(3, s3);
+		map.put(null, s2);
+		map.put(null, s1);
 		System.err.println(map);
 		System.out.println(map.containsKey(104));
 		/*
@@ -33,3 +35,5 @@ public class StudentMapDemo {
 	}
 
 }
+
+//Map<Department, List<Employee>> map= new HashMap<Integer,Student >();
