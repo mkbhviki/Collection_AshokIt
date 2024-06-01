@@ -31,8 +31,9 @@ public class JoinDemo {
 		List<Employee> emp = Arrays.asList(e1,e2,e3,e4,e5,e6,e7);
 		Predicate<Employee> employe1= e -> e.location.equals("Delhi");
 		Predicate<Employee> employe2= e -> e.dept.equals("Java");
+		Predicate<Employee> emp3= e -> e.name.startsWith("R");
 		
-		Predicate<Employee> e= employe1.and(employe2);
+		Predicate<Employee> e= employe1.and(employe2).and(emp3);
 		//Predicate<Employee> e= employe1.or(employe2);
 		
 		for(Employee E: emp) {
