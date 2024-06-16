@@ -2,9 +2,10 @@ package Stream.maching;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Collectors {
+public class CollectorsDemo {
 	public static void main(String[] args) {
 		
 		Person p1 = new Person("Rahul", "India");
@@ -28,7 +29,7 @@ public class Collectors {
 		 * System.out.println(filter.size()); filter.forEach(i ->System.out.println(i));
 		 */
 		
-	   List<String> Indians = list.stream().filter(p ->p.country.equals("India")).map(p ->p.name).collect(java.util.stream.Collectors.toList());
+	   List<String> Indians = list.stream().filter(p ->p.country.equals("India")).map(p ->p.name).collect(Collectors.toList());
 	   
 	   Indians.forEach(i->System.out.println(i));
 	}
