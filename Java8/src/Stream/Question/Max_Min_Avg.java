@@ -29,6 +29,10 @@ public class Max_Min_Avg {
 
 		System.out.println("Min Salary  :: "+min.get().salary);
 		
+		System.out.println("+++++++++++++++++++++++++++++++++");
+		Double avgsalary = list.stream().collect(Collectors.averagingDouble(e->e.salary));
+		System.out.println("Avg Salary  ::  "+avgsalary);
+		
 	}
 
 }
